@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Calculator</title>
+
+    </head> 
+    <body>
+        <fieldset style="width:0px">
+            <form>
+                Multiply <input type="text" 
+                id="firstNumber" /><br>
+                By <input type="text" 
+                id="secondNumber" /><br>
+                <input type="button" onClick="mult()" 
+                Value="Calculate" /><br>
+              </form>
+              
+              <p>The Result is : <br>
+               <span id = "result"></span>
+              </p>
+        </fieldset>
+
+        <script>
+
+    function mult()
+    {
+      num1 = document.getElementById(
+        "firstNumber").value;
+      num2 = document.getElementById(
+        "secondNumber").value;
+      document.getElementById(
+        "result").innerHTML = num1 * num2;
+    }
+
+        </script>
+    </body>
+</html>
+
+
+
+</body>
+
+</html>
